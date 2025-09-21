@@ -1,6 +1,21 @@
 FaceFusion
 ==========
 
+On Vast.ai, create manually the file `setup_vast.sh` and run it.
+
+```bash
+chmod +x facefusion_setup.sh
+./facefusion_setup.sh
+```
+
+Then run the app
+
+```bash
+python facefusion.py run --gradio-share
+```
+
+---
+
 > Industry leading face manipulation platform.
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/facefusion/facefusion/ci.yml.svg?branch=master)](https://github.com/facefusion/facefusion/actions?query=workflow:ci)
