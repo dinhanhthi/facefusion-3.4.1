@@ -50,6 +50,7 @@ conda install conda-forge::ffmpeg=7.0.2 conda-forge::libvorbis=1.3.7 --yes
 # Clone and install FaceFusion
 echo "📥 Cloning and installing FaceFusion..."
 cd /workspace
+mkdir -p ddd
 git clone https://github.com/dinhanhthi/facefusion-3.4.1.git
 cd facefusion-3.4.1
 git checkout vast
@@ -57,3 +58,4 @@ python install.py --onnxruntime cuda
 
 echo "✅ Setup complete! FaceFusion is ready to use."
 echo "🎯 To use it, run: conda activate facefusion"
+echo "🔄 PLEASE RESTART YOUR TERMINAL"

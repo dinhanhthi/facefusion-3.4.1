@@ -4,14 +4,14 @@ FaceFusion
 On Vast.ai, create manually the file `setup_vast.sh` and run it.
 
 ```bash
-chmod +x facefusion_setup.sh
-./facefusion_setup.sh
+chmod +x setup_vast.sh
+./setup_vast.sh
 ```
 
 Then run the app
 
 ```bash
-python facefusion.py run --gradio-share
+python facefusion.py run --share-gradio
 ```
 
 ---
