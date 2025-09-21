@@ -193,6 +193,7 @@ WORDING : Dict[str, Any] =\
 		'lip_syncer_weight': 'specify the degree of weight applied to the lips',
 		# uis
 		'open_browser': 'open the browser once the program is ready',
+		'share_gradio': 'create a public link for the Gradio interface',
 		'ui_layouts': 'launch a single or multiple UI layouts (choices: {choices}, ...)',
 		'ui_workflow': 'choose the ui workflow',
 		# download

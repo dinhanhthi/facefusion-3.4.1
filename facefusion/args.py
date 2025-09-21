@@ -105,6 +105,7 @@ def apply_args(args : Args, apply_state_item : ApplyStateItem) -> None:
 		processor_module.apply_args(args, apply_state_item)
 	# uis
 	apply_state_item('open_browser', args.get('open_browser'))
+	apply_state_item('share_gradio', args.get('share_gradio'))
 	apply_state_item('ui_layouts', args.get('ui_layouts'))
 	apply_state_item('ui_workflow', args.get('ui_workflow'))
 	# execution
