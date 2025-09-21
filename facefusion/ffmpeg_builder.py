@@ -25,7 +25,7 @@ def set_hardware_accelerator(value : str) -> Commands:
 
 
 def set_progress() -> Commands:
-	return [ '-progress', 'pipe:1' ]
+	return [ '-progress' ]
 
 
 def set_input(input_path : str) -> Commands:
