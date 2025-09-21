@@ -17,7 +17,6 @@ from facefusion.vision import detect_video_duration, detect_video_fps, pack_reso
 def run_ffmpeg_with_progress(commands : Commands, update_progress : UpdateProgress) -> subprocess.Popen[bytes]:
 	log_level = state_manager.get_item('log_level')
 	commands.extend(ffmpeg_builder.set_progress())
-	commands.extend(ffmpeg_builder.cast_stream())
 	commands = ffmpeg_builder.run(commands)
 	process = subprocess.Popen(commands, stderr = subprocess.PIPE, stdout = subprocess.PIPE)
 
@@ -36,6 +35,13 @@ def run_ffmpeg_with_progress(commands : Commands, update_progress : UpdateProgre
 			process.wait(timeout = 0.5)
 		except subprocess.TimeoutExpired:
 			continue
+
+		# Log stderr if process failed, regardless of log level
+		if process.returncode != 0:
+			stderr_output = process.stderr.read().decode() if process.stderr else ""
+			if stderr_output.strip():
+				logger.error(f"FFmpeg extraction failed with error: {stderr_output.strip()}", __name__)
+
 		return process
 
 	return process
