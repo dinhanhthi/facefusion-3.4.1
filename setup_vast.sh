@@ -59,3 +59,8 @@ python install.py --onnxruntime cuda
 echo "✅ Setup complete! FaceFusion is ready to use."
 echo "🎯 To use it, run: conda activate facefusion"
 echo "🔄 PLEASE RESTART YOUR TERMINAL"
+echo "Then run following commands:"
+echo "conda activate facefusion"
+echo "cd /workspace/facefusion-3.4.1"
+echo "python facefusion.py run --share-gradio"
+echo "🎉 Done!"
