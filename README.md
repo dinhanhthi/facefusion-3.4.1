@@ -1,7 +1,7 @@
 FaceFusion
 ==========
 
-On Vast.ai, create manually the file `setup_vast.sh` and run it.
+On Vast.ai, use [this template](https://cloud.vast.ai?ref_id=159037&template_id=078e28af0196557426dde41c75401b57) to create a new instance. Then create manually the file `setup_vast.sh` and run it.
 
 ```bash
 chmod +x setup_vast.sh
