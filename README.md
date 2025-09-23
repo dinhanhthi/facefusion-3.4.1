@@ -7,10 +7,16 @@ On Vast.ai, use [this template](https://cloud.vast.ai?ref_id=159037&template_id=
 chmod +x setup_vast.sh
 ./setup_vast.sh
 ```
-
-Then run the app
+Or you can just run following command,
 
 ```bash
+curl -s https://gist.githubusercontent.com/username/gistid/raw/filename.sh | bash
+```
+
+Then close the curreng terminal, open a new one and
+```bash
+conda activate facefusion
+cd /workspace/facefusion-3.4.1/
 python facefusion.py run --share-gradio
 ```
 
