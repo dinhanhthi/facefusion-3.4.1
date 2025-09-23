@@ -10,7 +10,7 @@ chmod +x setup_vast.sh
 Or you can just run following command,
 
 ```bash
-curl -s https://gist.githubusercontent.com/username/gistid/raw/filename.sh | bash
+curl -s https://gist.githubusercontent.com/dinhanhthi/160a4a3e9c6f54867e3fb6385de0d8b6/raw/fdf94d2251879b3371963ce02c296b602cc10dff/setup_vast.sh | bash
 ```
 
 Then close the curreng terminal, open a new one and
